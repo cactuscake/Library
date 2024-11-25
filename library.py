@@ -89,7 +89,7 @@ def main():
         elif choice == '2':
             book_id = input("Введите ID книги: ")
             if not book_id.isdigit():
-                print("недопустимый ID")
+                print("Недопустимый ID")
             else:
                 book_id = int(book_id)
                 library.remove_book(book_id)
@@ -106,14 +106,14 @@ def main():
         elif choice == '5':
             book_id = input("Введите ID книги: ")
             if not book_id.isdigit():
-                print("недопустимый ID")
+                print("Недопустимый ID")
             else:
                 book_id = int(book_id)
                 new_status = input("Введите новый статус ('в наличии' или 'выдана'): ")
                 if new_status == 'в наличии' or new_status == 'выдана':
                     library.update_status(book_id, new_status)
                 else:
-                    print("неверный статус")
+                    print("Неверный статус")
         elif choice == '6':
             print("Выход.")
             break

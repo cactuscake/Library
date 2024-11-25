@@ -110,7 +110,7 @@ def main():
             else:
                 book_id = int(book_id)
                 new_status = input("Введите новый статус ('в наличии' или 'выдана'): ")
-                if new_status == 'в наличии' or new_status == 'выдана' and isinstance(book_id, int):
+                if new_status == 'в наличии' or new_status == 'выдана':
                     library.update_status(book_id, new_status)
                 else:
                     print("неверный статус")
